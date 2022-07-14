@@ -6,22 +6,28 @@
 
 ```go run demo.go```
 
-## Implementations
+## List of demo code implementations
 
 The following implementations are provided in this package.
 
 * Custom Binary Tree
 
-[BinTree.go](https://github.com/louis-trevino/go-uno/blob/master/uno/BinTree.go)
-
-[BinTree.go REL](uno/BinTree.go)
+[BinTree.go](uno/BinTree.go)
 
 * Concurrent Split Sort
 
+[concSplitSort.go](uno/concSplitSort.go)
+
 * Concurrent Diner Philosophers (alt rules)
+
+[diners.go](uno/diners.go)
 
 * Race Condition
 
+[raceCondition.go](uno/raceCondition.go)
+
 * Utils
+
+[utils.go](uno/utils.go)
 
 
