@@ -6,8 +6,6 @@
  * Copyright(C) Torino Consulting, 2020.
  *
  * Compiled and tested using Go version go1.13.8 windows/amd64
- *
- * Please note that I like using semicolons -- valid in Go.
  */
 package uno
 
@@ -60,7 +58,7 @@ func NewBinTree(initialValues []Comparable) *BinTree {
 		return binTree
 	}
 	for _, iData := range initialValues {
-		//fmt.Printf("Adding %v \n", iData);
+		//fmt.Printf("Adding %v \n", iData)
 		binTree.Insert(iData)
 	}
 	return binTree
@@ -104,8 +102,8 @@ func (inst *BinTree) InorderNode(iNode *BinNode, sb *string) {
 		if len(*sb) == 0 {
 			sep = ""
 		}
-		var fmtData string = iNode.Data.GeStringValue() // fmt.Sprintf("%.2f", iNode.Data);
-		// fmt.Printf("+ %s \n", fmtData);
+		var fmtData string = iNode.Data.GeStringValue() // fmt.Sprintf("%.2f", iNode.Data)
+		// fmt.Printf("+ %s \n", fmtData)
 		*sb = fmt.Sprintf("%s%s%s", *sb, sep, fmtData)
 		inst.InorderNode(iNode.Right, sb)
 	}
